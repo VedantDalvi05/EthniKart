@@ -1,0 +1,2 @@
+# EthniKart
+First hackathon project :)
