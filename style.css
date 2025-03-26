@@ -1,0 +1,146 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 1000px;
+    box-sizing: border-box;
+    padding-top: 0px;
+}
+.top-container{
+    background-color: #272727; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    
+    z-index: 1000; /* Ensures it stays above other elements */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px; /* Adjust as needed */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Optional shadow effect */
+
+}
+.name-logo {
+    
+    color: #FED8B1;
+    width: 10%;
+    position: relative;
+    left: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    
+}
+.top-opt{
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+}
+.profile {
+    display: flex;
+    justify-content: right;
+    position: fixed;
+    top: 20px;
+    right:20px ;
+    font-size: 30px;
+    color: #FED8B1 ;
+}
+.location{
+    display: flex;
+    justify-content: right;
+    position: fixed;
+    bottom: 70px;
+    right:10px ;
+    font-size: 20px;
+    
+}
+.loc-icon{
+    font-size: 18px;
+    position: fixed;
+    right: 250px;
+    top: 30px;
+    color: #FED8B1 ;
+}
+.loc-txt-1 {
+    position: fixed;
+    right:180px ;
+    top: 0px;
+    font-weight: 100;
+    color:#cac4bd ;
+    font-size: 13px;
+    letter-spacing: 2px;
+ 
+}
+.loc-txt-2 {
+    position: fixed;
+    top: 10px;
+    font-weight: 500;
+    right: 200px;
+    color: #FED8B1 ;
+}
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+    
+}
+
+nav a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+}
+nav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+.hero {
+    background-color: #f4f4f4;
+    padding: 2rem;
+    text-align: center;
+}
+.hero h1 {
+    margin: 0;
+    color: #333;
+}
+.hero p {
+    color: #666;
+}
+.cta-button {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.cta-button:hover {
+    background-color: #45a049;
+}
+.features {
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem;
+    background-color: #fff;
+}
+.feature {
+    text-align: center;
+    max-width: 300px;
+}
+.feature h2 {
+    color: #333;
+}
+.feature p {
+    color: #666;
+}
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #333;
+    color: white;
+}
