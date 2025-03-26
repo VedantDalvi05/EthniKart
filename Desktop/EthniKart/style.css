@@ -81,66 +81,86 @@ body {
     right: 200px;
     color: #FED8B1 ;
 }
-nav {
-    display: flex;
-    justify-content: center;
-    background-color: #333;
-    
+.shop-sell {
+display: flex;
+justify-content: space-evenly;
+position: relative;
+top: 170px;
 }
 
-nav a {
-    color: white;
-    padding: 14px 20px;
-    text-decoration: none;
-    text-align: center;
+.box {
+    
+    border: 2px solid black ;
+    height: 500px;
+    width: 45%;
+    
 }
-nav a:hover {
-    background-color: #ddd;
+.seller{
+    background-color: aqua;
+}
+.buyer {
+    background-color: #FED8B1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Icon Styling */
+.login-icon {
+    font-size: 30px;
+    cursor: pointer;
+    text-decoration: none;
     color: black;
 }
-.hero {
-    background-color: #f4f4f4;
-    padding: 2rem;
+
+/* Popup Background */
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Popup Box */
+.popup-box {
+    background: white;
+    padding: 20px;
+    width: 300px;
+    border-radius: 10px;
     text-align: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    position: relative;
 }
-.hero h1 {
-    margin: 0;
-    color: #333;
-}
-.hero p {
-    color: #666;
-}
-.cta-button {
-    display: inline-block;
-    margin-top: 1rem;
-    padding: 10px 20px;
-    background-color: #4CAF50;
-    color: white;
+
+/* Close Button */
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
     text-decoration: none;
-    border-radius: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    color: red;
 }
-.cta-button:hover {
-    background-color: #45a049;
-}
-.features {
+
+/* Show Popup when :target is activated */
+#popup:target {
     display: flex;
-    justify-content: space-around;
-    padding: 2rem;
-    background-color: #fff;
-}
-.feature {
-    text-align: center;
-    max-width: 300px;
-}
-.feature h2 {
-    color: #333;
-}
-.feature p {
-    color: #666;
-}
-footer {
-    text-align: center;
-    padding: 1rem;
-    background-color: #333;
-    color: white;
 }
