@@ -7,12 +7,18 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="buy-sec.html">
 </head>
 <body>
         <div class="top-container">
             <div class="name-logo"><h1>EthniKart</h1></div>
+
+            <div class="seller-icon">   <a href="sell-sec.html"> <i class="fa-solid fa-cart-shopping"></i> </div></a>
+            
            
-            <div class="profile"><i class="fa-solid fa-circle-user"></i> </div> 
+            <div class="profile">
+                <i class="fa-solid fa-circle-user" ></i>
+             </div> 
             <div class="location">
                 <div class="loc-icon"><i class="fa-sharp-duotone fa-solid fa-location-dot"></i></div>
                 <p class="loc-txt-1">Location</p>
@@ -20,31 +26,58 @@
 
             </div> 
         </div>
-        
-        
-        <div class="shop-sell">
-            <div class="seller box">
-                <button class="seller-login" type="button" >Login</button>
-            </div>
-            <div class="buyer box">
-              
-            </div>
-            
+  
+
+
+   
+
+
+
+
+
+
+        <div class="slider-container">
+            <div class="slider-wrapper">
+            <img src="roses-and-radiance-a-vision-in-scarlet-cw.jpg" class="active" alt="Fashion">
+            <img src="myntra poster.png" alt="Shoes">
+            <img src="pngwing.com (1).png" alt="Clothing">
+            <img src="Air Pollution Pie Chart - visual selection.png" alt="Electronics">
+            <img src="ass 2 eg.jpg" alt="Accessories">
+
+
+
+                 <!-- Duplicate images for seamless loop effect -->
+            <img src="roses-and-radiance-a-vision-in-scarlet-cw.jpg" alt="Fashion">
+            <img src="myntra poster.png" alt="Shoes">
+            <img src="pngwing.com (1).png" alt="Clothing">
+            <img src="Air Pollution Pie Chart - visual selection.png" alt="Electronics">
+            <img src="ass 2 eg.jpg" alt="Accessories">
 
         </div>
-       
-        
-   
+        </div>
     
+        <script>
+            let currentIndex = 0;
+            const totalImages = document.querySelectorAll('.slider-wrapper img').length;
+            const sliderWrapper = document.querySelector('.slider-wrapper');
+    
+            function slideImages() {
+                currentIndex = (currentIndex + 1) % totalImages;
+                sliderWrapper.style.transform = `translateX(-${currentIndex * 100}vw)`;
+            }
+    
+            setInterval(slideImages, 3000); // Change image every 3 seconds
+        </script>
 
 
 
 
+        
+        <div class="shop-buy">
 
 
 
-
-<!-- Login Icon (Clickable) -->
+            <!-- Login Icon (Clickable) -->
 <a href="#popup" class="login-icon">
     <i class="fas fa-user"></i>
 </a>
@@ -63,6 +96,22 @@
 </div>
  
     
+            
+
+</div>
+       
+        
+   
+    
+
+
+
+
+
+
+
+
+
   
 </body>
 </html>
